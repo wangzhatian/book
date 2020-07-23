@@ -1,0 +1,662 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <!-- Start book python基础语言 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>集合set | python基础语言</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-emphasize/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../02day/section.5.html" />
+    
+    
+    <link rel="prev" href="../01day/section.6.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="3.6"
+        data-chapter-title="集合set"
+        data-filepath="01day/section.7.md"
+        data-basepath=".."
+        data-revision="Fri Mar 17 2017 08:48:09 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        课程介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01day/index.html">
+            
+                
+                    <a href="../01day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        面向对象进阶
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01day/section.1.0.html">
+            
+                
+                    <a href="../01day/section.1.0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        元类
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01day/section.1.1.html">
+            
+                
+                    <a href="../01day/section.1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        python是动态语言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01day/section.1.3.html">
+            
+                
+                    <a href="../01day/section.1.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        __slots__
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02day/section.4.html">
+            
+                
+                    <a href="../02day/section.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        生成器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="02day/section.3.html">
+            
+                
+                    <a href="../02day/section.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        迭代器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="02day/section.1.html">
+            
+                
+                    <a href="../02day/section.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        闭包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="02day/section.2.html">
+            
+                
+                    <a href="../02day/section.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        装饰器
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02day/index.html">
+            
+                
+                    <a href="../02day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        其他的知识点
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="03day/section.0.2.html">
+            
+                
+                    <a href="../03day/section.0.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        import导入模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="03day/section.1.1.html">
+            
+                
+                    <a href="../03day/section.1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        循环导入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03day/section.0.3.html">
+            
+                
+                    <a href="../03day/section.0.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        作用域
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="03day/section.2.html">
+            
+                
+                    <a href="../03day/section.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        ==、is
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="03day/section.1.html">
+            
+                
+                    <a href="../03day/section.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        深拷贝、浅拷贝
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="03day/section.6.html">
+            
+                
+                    <a href="../03day/section.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        进制、位运算
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="01day/section.3.html">
+            
+                
+                    <a href="../01day/section.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        私有化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="01day/section.3.1.html">
+            
+                
+                    <a href="../01day/section.3.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        属性property
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03day/index.html">
+            
+                
+                    <a href="../03day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        其他的知识点
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03day/section.0.1.html">
+            
+                
+                    <a href="../03day/section.0.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        垃圾回收(一)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03day/section.0.1.1.html">
+            
+                
+                    <a href="../03day/section.0.1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        垃圾回收(二)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03day/section.0.1.2.html">
+            
+                
+                    <a href="../03day/section.0.1.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        垃圾回收(三)-gc模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="01day/section.4.html">
+            
+                
+                    <a href="../01day/section.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        内建属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="01day/section.6.html">
+            
+                
+                    <a href="../01day/section.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        内建函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.6" data-path="01day/section.7.html">
+            
+                
+                    <a href="../01day/section.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        集合set
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="02day/section.5.html">
+            
+                
+                    <a href="../02day/section.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        functools
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="03day/section.4.html">
+            
+                
+                    <a href="../03day/section.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="03day/section.3.html">
+            
+                
+                    <a href="../03day/section.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        调试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="03day/section.5.html">
+            
+                
+                    <a href="../03day/section.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        编码风格
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >python基础语言</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x96C6;&#x5408;set">&#x96C6;&#x5408;set</h1>
+<p>&#x96C6;&#x5408;&#x4E0E;&#x4E4B;&#x524D;&#x5217;&#x8868;&#x3001;&#x5143;&#x7EC4;&#x7C7B;&#x4F3C;&#xFF0C;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x591A;&#x4E2A;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x662F;&#x4E0D;&#x91CD;&#x590D;&#x7684;</p>
+<p>&#x96C6;&#x5408;&#x5BF9;&#x8C61;&#x8FD8;&#x652F;&#x6301;union(&#x8054;&#x5408;), intersection(&#x4EA4;), difference(&#x5DEE;)&#x548C;sysmmetric_difference(&#x5BF9;&#x79F0;&#x5DEE;&#x96C6;)&#x7B49;&#x6570;&#x5B66;&#x8FD0;&#x7B97;.</p>
+<pre><code class="lang-python">&gt;&gt;&gt; x = set(&apos;abcd&apos;)
+&gt;&gt;&gt; x
+{&apos;c&apos;, &apos;a&apos;, &apos;b&apos;, &apos;d&apos;}
+&gt;&gt;&gt; type(x)
+&lt;class &apos;set&apos;&gt;
+&gt;&gt;&gt; 
+&gt;&gt;&gt; 
+&gt;&gt;&gt; y = set([&apos;h&apos;,&apos;e&apos;,&apos;l&apos;,&apos;l&apos;,&apos;o&apos;])
+&gt;&gt;&gt; y
+{&apos;h&apos;, &apos;e&apos;, &apos;o&apos;, &apos;l&apos;}
+&gt;&gt;&gt; 
+&gt;&gt;&gt; 
+&gt;&gt;&gt; z = set(&apos;spam&apos;)
+&gt;&gt;&gt; z
+{&apos;s&apos;, &apos;a&apos;, &apos;m&apos;, &apos;p&apos;}
+&gt;&gt;&gt; 
+&gt;&gt;&gt; 
+&gt;&gt;&gt; y&amp;z #&#x4EA4;&#x96C6;
+set()
+&gt;&gt;&gt; 
+&gt;&gt;&gt; 
+&gt;&gt;&gt; x&amp;z #&#x4EA4;&#x96C6;
+{&apos;a&apos;}
+&gt;&gt;&gt; 
+&gt;&gt;&gt; 
+&gt;&gt;&gt; x|y #&#x5E76;&#x96C6;
+{&apos;a&apos;, &apos;e&apos;, &apos;d&apos;, &apos;l&apos;, &apos;c&apos;, &apos;h&apos;, &apos;o&apos;, &apos;b&apos;}
+&gt;&gt;&gt; 
+&gt;&gt;&gt; x-y #&#x5DEE;&#x96C6;
+{&apos;c&apos;, &apos;a&apos;, &apos;b&apos;, &apos;d&apos;}
+&gt;&gt;&gt; 
+&gt;&gt;&gt; 
+&gt;&gt;&gt; x^z #&#x5BF9;&#x79F0;&#x5DEE;&#x96C6;(&#x5728;x&#x6216;z&#x4E2D;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x540C;&#x65F6;&#x51FA;&#x73B0;&#x5728;&#x4E8C;&#x8005;&#x4E2D;)
+{&apos;m&apos;, &apos;d&apos;, &apos;s&apos;, &apos;c&apos;, &apos;b&apos;, &apos;p&apos;}
+&gt;&gt;&gt; 
+&gt;&gt;&gt; 
+&gt;&gt;&gt; len(x)
+4
+&gt;&gt;&gt; len(y)
+4
+&gt;&gt;&gt; len(z)
+4
+&gt;&gt;&gt;
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../01day/section.6.html" class="navigation navigation-prev " aria-label="Previous page: 内建函数"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../02day/section.5.html" class="navigation navigation-next " aria-label="Next page: functools"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"toggle-chapters":{},"splitter":{},"emphasize":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book python基础语言 -->
+</html>

@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <!-- Start book python基础语言 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>迭代器 | python基础语言</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-emphasize/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../02day/section.1.html" />
+    
+    
+    <link rel="prev" href="../02day/section.4.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="1.5"
+        data-chapter-title="迭代器"
+        data-filepath="02day/section.3.md"
+        data-basepath=".."
+        data-revision="Fri Mar 17 2017 08:48:09 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        课程介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01day/index.html">
+            
+                
+                    <a href="../01day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        面向对象进阶
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01day/section.1.0.html">
+            
+                
+                    <a href="../01day/section.1.0.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        元类
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01day/section.1.1.html">
+            
+                
+                    <a href="../01day/section.1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        python是动态语言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01day/section.1.3.html">
+            
+                
+                    <a href="../01day/section.1.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        __slots__
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02day/section.4.html">
+            
+                
+                    <a href="../02day/section.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        生成器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="02day/section.3.html">
+            
+                
+                    <a href="../02day/section.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        迭代器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="02day/section.1.html">
+            
+                
+                    <a href="../02day/section.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        闭包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="02day/section.2.html">
+            
+                
+                    <a href="../02day/section.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        装饰器
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02day/index.html">
+            
+                
+                    <a href="../02day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        其他的知识点
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="03day/section.0.2.html">
+            
+                
+                    <a href="../03day/section.0.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        import导入模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="03day/section.1.1.html">
+            
+                
+                    <a href="../03day/section.1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        循环导入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="03day/section.0.3.html">
+            
+                
+                    <a href="../03day/section.0.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        作用域
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="03day/section.2.html">
+            
+                
+                    <a href="../03day/section.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        ==、is
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="03day/section.1.html">
+            
+                
+                    <a href="../03day/section.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        深拷贝、浅拷贝
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="03day/section.6.html">
+            
+                
+                    <a href="../03day/section.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        进制、位运算
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="01day/section.3.html">
+            
+                
+                    <a href="../01day/section.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        私有化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="01day/section.3.1.html">
+            
+                
+                    <a href="../01day/section.3.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        属性property
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03day/index.html">
+            
+                
+                    <a href="../03day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        其他的知识点
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03day/section.0.1.html">
+            
+                
+                    <a href="../03day/section.0.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        垃圾回收(一)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03day/section.0.1.1.html">
+            
+                
+                    <a href="../03day/section.0.1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        垃圾回收(二)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03day/section.0.1.2.html">
+            
+                
+                    <a href="../03day/section.0.1.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        垃圾回收(三)-gc模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="01day/section.4.html">
+            
+                
+                    <a href="../01day/section.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        内建属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="01day/section.6.html">
+            
+                
+                    <a href="../01day/section.6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        内建函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="01day/section.7.html">
+            
+                
+                    <a href="../01day/section.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        集合set
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="02day/section.5.html">
+            
+                
+                    <a href="../02day/section.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        functools
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="03day/section.4.html">
+            
+                
+                    <a href="../03day/section.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="03day/section.3.html">
+            
+                
+                    <a href="../03day/section.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        调试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="03day/section.5.html">
+            
+                
+                    <a href="../03day/section.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        编码风格
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >python基础语言</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x8FED;&#x4EE3;&#x5668;">&#x8FED;&#x4EE3;&#x5668;</h1>
+<p>&#x8FED;&#x4EE3;&#x662F;&#x8BBF;&#x95EE;&#x96C6;&#x5408;&#x5143;&#x7D20;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x3002;&#x8FED;&#x4EE3;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x8BB0;&#x4F4F;&#x904D;&#x5386;&#x7684;&#x4F4D;&#x7F6E;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x8FED;&#x4EE3;&#x5668;&#x5BF9;&#x8C61;&#x4ECE;&#x96C6;&#x5408;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5F00;&#x59CB;&#x8BBF;&#x95EE;&#xFF0C;&#x76F4;&#x5230;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x88AB;&#x8BBF;&#x95EE;&#x5B8C;&#x7ED3;&#x675F;&#x3002;&#x8FED;&#x4EE3;&#x5668;&#x53EA;&#x80FD;&#x5F80;&#x524D;&#x4E0D;&#x4F1A;&#x540E;&#x9000;&#x3002;</p>
+<h2 id="1-&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;">1. &#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;</h2>
+<p>&#x4EE5;&#x76F4;&#x63A5;&#x4F5C;&#x7528;&#x4E8E; for &#x5FAA;&#x73AF;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;</p>
+<p>&#x4E00;&#x7C7B;&#x662F;&#x96C6;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x5982; list &#x3001; tuple &#x3001; dict &#x3001; set &#x3001; str &#x7B49;&#xFF1B;</p>
+<p>&#x4E00;&#x7C7B;&#x662F; generator &#xFF0C;&#x5305;&#x62EC;&#x751F;&#x6210;&#x5668;&#x548C;&#x5E26; yield &#x7684;generator function&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F5C;&#x7528;&#x4E8E; for &#x5FAA;&#x73AF;&#x7684;&#x5BF9;&#x8C61;&#x7EDF;&#x79F0;&#x4E3A;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#xFF1A; Iterable &#x3002;</p>
+<h2 id="2-&#x5224;&#x65AD;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x8FED;&#x4EE3;">2. &#x5224;&#x65AD;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x8FED;&#x4EE3;</h2>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528; isinstance() &#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x662F; Iterable &#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code class="lang-python">In [<span class="hljs-number">50</span>]: <span class="hljs-keyword">from</span> collections <span class="hljs-keyword">import</span> Iterable
+
+In [<span class="hljs-number">51</span>]: isinstance([], Iterable)
+Out[<span class="hljs-number">51</span>]: <span class="hljs-keyword">True</span>
+
+In [<span class="hljs-number">52</span>]: isinstance({}, Iterable)
+Out[<span class="hljs-number">52</span>]: <span class="hljs-keyword">True</span>
+
+In [<span class="hljs-number">53</span>]: isinstance(<span class="hljs-string">&apos;abc&apos;</span>, Iterable)
+Out[<span class="hljs-number">53</span>]: <span class="hljs-keyword">True</span>
+
+In [<span class="hljs-number">54</span>]: isinstance((x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>)), Iterable)
+Out[<span class="hljs-number">54</span>]: <span class="hljs-keyword">True</span>
+
+In [<span class="hljs-number">55</span>]: isinstance(<span class="hljs-number">100</span>, Iterable)
+Out[<span class="hljs-number">55</span>]: <span class="hljs-keyword">False</span>
+</code></pre>
+<p>&#x800C;&#x751F;&#x6210;&#x5668;&#x4E0D;&#x4F46;&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x4E8E; for &#x5FAA;&#x73AF;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x88AB; next() &#x51FD;&#x6570;&#x4E0D;&#x65AD;&#x8C03;&#x7528;&#x5E76;&#x8FD4;&#x56DE;&#x4E0B;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x76F4;&#x5230;&#x6700;&#x540E;&#x629B;&#x51FA; StopIteration &#x9519;&#x8BEF;&#x8868;&#x793A;&#x65E0;&#x6CD5;&#x7EE7;&#x7EED;&#x8FD4;&#x56DE;&#x4E0B;&#x4E00;&#x4E2A;&#x503C;&#x4E86;&#x3002;</p>
+<h2 id="3&#x8FED;&#x4EE3;&#x5668;">3.&#x8FED;&#x4EE3;&#x5668;</h2>
+<p>&#x53EF;&#x4EE5;&#x88AB;next()&#x51FD;&#x6570;&#x8C03;&#x7528;&#x5E76;&#x4E0D;&#x65AD;&#x8FD4;&#x56DE;&#x4E0B;&#x4E00;&#x4E2A;&#x503C;&#x7684;&#x5BF9;&#x8C61;&#x79F0;&#x4E3A;&#x8FED;&#x4EE3;&#x5668;&#xFF1A;Iterator&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528; isinstance() &#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x662F; Iterator &#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code class="lang-python">In [<span class="hljs-number">56</span>]: <span class="hljs-keyword">from</span> collections <span class="hljs-keyword">import</span> Iterator
+
+In [<span class="hljs-number">57</span>]: isinstance((x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>)), Iterator)
+Out[<span class="hljs-number">57</span>]: <span class="hljs-keyword">True</span>
+
+In [<span class="hljs-number">58</span>]: isinstance([], Iterator)
+Out[<span class="hljs-number">58</span>]: <span class="hljs-keyword">False</span>
+
+In [<span class="hljs-number">59</span>]: isinstance({}, Iterator)
+Out[<span class="hljs-number">59</span>]: <span class="hljs-keyword">False</span>
+
+In [<span class="hljs-number">60</span>]: isinstance(<span class="hljs-string">&apos;abc&apos;</span>, Iterator)
+Out[<span class="hljs-number">60</span>]: <span class="hljs-keyword">False</span>
+
+In [<span class="hljs-number">61</span>]: isinstance(<span class="hljs-number">100</span>, Iterator)
+Out[<span class="hljs-number">61</span>]: <span class="hljs-keyword">False</span>
+</code></pre>
+<h2 id="4iter&#x51FD;&#x6570;">4.iter()&#x51FD;&#x6570;</h2>
+<p>&#x751F;&#x6210;&#x5668;&#x90FD;&#x662F; Iterator &#x5BF9;&#x8C61;&#xFF0C;&#x4F46; list &#x3001; dict &#x3001; str &#x867D;&#x7136;&#x662F; Iterable &#xFF0C;&#x5374;&#x4E0D;&#x662F; Iterator &#x3002;</p>
+<p>&#x628A; list &#x3001; dict &#x3001; str &#x7B49; Iterable &#x53D8;&#x6210; Iterator &#x53EF;&#x4EE5;&#x4F7F;&#x7528; iter() &#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-python">In [<span class="hljs-number">62</span>]: isinstance(iter([]), Iterator)
+Out[<span class="hljs-number">62</span>]: <span class="hljs-keyword">True</span>
+
+In [<span class="hljs-number">63</span>]: isinstance(iter(<span class="hljs-string">&apos;abc&apos;</span>), Iterator)
+Out[<span class="hljs-number">63</span>]: <span class="hljs-keyword">True</span>
+</code></pre>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<ul>
+<li>&#x51E1;&#x662F;&#x53EF;&#x4F5C;&#x7528;&#x4E8E; for &#x5FAA;&#x73AF;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x662F; Iterable &#x7C7B;&#x578B;&#xFF1B;</li>
+<li>&#x51E1;&#x662F;&#x53EF;&#x4F5C;&#x7528;&#x4E8E; next() &#x51FD;&#x6570;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x662F; Iterator &#x7C7B;&#x578B;</li>
+<li>&#x96C6;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5982; list &#x3001; dict &#x3001; str &#x7B49;&#x662F; Iterable &#x4F46;&#x4E0D;&#x662F; Iterator &#xFF0C;&#x4E0D;&#x8FC7;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; iter() &#x51FD;&#x6570;&#x83B7;&#x5F97;&#x4E00;&#x4E2A; Iterator &#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../02day/section.4.html" class="navigation navigation-prev " aria-label="Previous page: 生成器"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../02day/section.1.html" class="navigation navigation-next " aria-label="Next page: 闭包"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"toggle-chapters":{},"splitter":{},"emphasize":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book python基础语言 -->
+</html>
