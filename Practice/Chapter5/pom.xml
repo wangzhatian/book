@@ -19,7 +19,7 @@
 <!--            httpclient的包-->
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.0.2</version>
+            <version>4.3.6</version>
         </dependency>
         <!--allure的testng插件-->
 <!--        <dependency>-->
