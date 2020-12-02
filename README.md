@@ -1,2 +1,22 @@
-# book
-一些其他文件:书籍,拓展插件等等
+# DockerScript
+- 2020.12
+  - Docker一键安装
+  - Portainer一键安装
+
+# Fiddler扩展
+- 早期
+  - Fiddler抓包导出为JMeter脚本
+# Java单词本
+- 早期
+  - 基于有道云笔记的Java单词本，[使用方法](https://testerhome.com/topics/25722)
+# Java学习记录
+- 早期
+  - 日常笔记，还没完善
+# Linux系列
+- 早期
+  - 鸟哥的Linux私房菜
+# Python系列
+- 早期
+  - 基础+高级的gitbook
+- 计算机基础
+  - 操作系统知识点概述
