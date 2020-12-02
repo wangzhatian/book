@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a710b936-bfc8-41cf-806d-82bb577ce6a4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1krVWzorb8SdLjE7NmMzpmW1JVM" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar!/" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ixixi\Desktop\Practice\HttpTest\MocoServer" />
+      <recent name="C:\Users\ixixi\Desktop\HttpTest\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.MyCookiesForPost">
+    <configuration name="MyCookiesForGet.testGetWith" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HttpTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.http.exer1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.http.exer1" />
+      <option name="MAIN_CLASS_NAME" value="com.http.exer1.MyCookiesForGet" />
+      <option name="METHOD_NAME" value="testGetWith" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyCookiesForPost (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HttpTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.http.exer1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.http.exer1" />
+      <option name="MAIN_CLASS_NAME" value="com.http.exer1.MyCookiesForPost" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyCookiesForPost" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HttpTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.http.exer1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.http.exer1" />
+      <option name="MAIN_CLASS_NAME" value="com.http.exer1.MyCookiesForPost" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyCookiesForPost.testGetCookies" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HttpTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.http.exer1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.http.exer1" />
+      <option name="MAIN_CLASS_NAME" value="com.http.exer1.MyCookiesForPost" />
+      <option name="METHOD_NAME" value="testGetCookies" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyCookiesForPost.testPostCookies" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HttpTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.http.exer1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.http.exer1" />
+      <option name="MAIN_CLASS_NAME" value="com.http.exer1.MyCookiesForPost" />
+      <option name="METHOD_NAME" value="testPostCookies" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.MyCookiesForPost" />
+        <item itemvalue="TestNG.MyCookiesForPost.testPostCookies" />
+        <item itemvalue="TestNG.MyCookiesForPost (1)" />
+        <item itemvalue="TestNG.MyCookiesForGet.testGetWith" />
+        <item itemvalue="TestNG.MyCookiesForPost.testGetCookies" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\ixixi\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a710b936-bfc8-41cf-806d-82bb577ce6a4" name="Default Changelist" comment="" />
+      <created>1606458732753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606458732753</updated>
+      <workItem from="1606458736906" duration="302000" />
+      <workItem from="1606459357781" duration="1249000" />
+      <workItem from="1606465125521" duration="2055000" />
+      <workItem from="1606467289995" duration="21000" />
+      <workItem from="1606467378215" duration="37000" />
+      <workItem from="1606467464394" duration="771000" />
+      <workItem from="1606565956446" duration="112000" />
+      <workItem from="1606628783249" duration="415000" />
+      <workItem from="1606629443329" duration="3338000" />
+      <workItem from="1606632945865" duration="3469000" />
+      <workItem from="1606659585338" duration="4590000" />
+      <workItem from="1606745698442" duration="751000" />
+      <workItem from="1606816329157" duration="2756000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="64" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606634197650">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="64" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760@0.0.1280.760" timestamp="1606634197650" />
+    <state x="271" y="107" key="#com.intellij.ide.util.ExportDialog" timestamp="1606663955089">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="271" y="107" key="#com.intellij.ide.util.ExportDialog/0.0.1280.760@0.0.1280.760" timestamp="1606663955089" />
+    <state x="99" y="220" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606465508238">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="99" y="220" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.760@0.0.1280.760" timestamp="1606465508238" />
+    <state x="429" y="135" key="FileChooserDialogImpl" timestamp="1606816662486">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="429" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1606816662486" />
+    <state width="1238" height="294" key="GridCell.Tab.0.bottom" timestamp="1606819086010">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="294" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1606819086010" />
+    <state width="1238" height="294" key="GridCell.Tab.0.center" timestamp="1606819086010">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="294" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1606819086010" />
+    <state width="1238" height="294" key="GridCell.Tab.0.left" timestamp="1606819086010">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="294" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1606819086010" />
+    <state width="1238" height="294" key="GridCell.Tab.0.right" timestamp="1606819086010">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="294" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1606819086010" />
+    <state x="302" y="201" key="com.intellij.ide.util.TipDialog" timestamp="1606745705632">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="302" y="201" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1606745705632" />
+    <state x="14" y="0" key="new project wizard" timestamp="1606629199270">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="14" y="0" key="new project wizard/0.0.1280.760@0.0.1280.760" timestamp="1606629199270" />
+    <state x="631" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1606662774879">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="626" y="82" width="672" height="678" key="search.everywhere.popup/0.0.1280.760/-1024.193.1024.728@0.0.1280.760" timestamp="1606632630889" />
+    <state x="631" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1606662774879" />
+  </component>
+</project>

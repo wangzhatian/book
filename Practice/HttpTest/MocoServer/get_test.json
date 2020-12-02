@@ -1,0 +1,35 @@
+[
+  {
+    "description": "根目录",
+    "request": {
+      "uri": "/"
+    },
+    "response": {
+      "text": "Hello world!"
+    }
+  },
+  {
+    "description": "查找书籍",
+    "request": {
+      "method": "get",
+      "uri": "/drticle/book"
+    },
+    "response": {
+      "text": "查找书籍"
+    }
+  },
+  {
+    "description": "查找具体书籍",
+    "request": {
+      "method": "get",
+      "uri": "/article/book",
+      "queries": {
+        "name": "kaka",
+        "id": "75"
+      }
+    },
+    "response": {
+      "text": "相应内容"
+    }
+  }
+]

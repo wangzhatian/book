@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c0d6660-20ad-4d2a-b1a3-f3d17bc43fd4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kr0PJlw63OrN5AMAoQrrIKKJuq" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HttpTest" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="com.ding" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ixixi\Desktop\AllureDemo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/ixixi/Desktop/AllureDemo/src/main/resources/suite.xml">
+    <configuration name="C:/Users/ixixi/Desktop/AllureDemo/src/main/resources/suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AllureDemo" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/suite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AllureDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ding.exer1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ding.exer1" />
+      <option name="MAIN_CLASS_NAME" value="com.ding.exer1.HttpTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpTest.httpTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AllureDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ding.exer1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ding.exer1" />
+      <option name="MAIN_CLASS_NAME" value="com.ding.exer1.HttpTest" />
+      <option name="METHOD_NAME" value="httpTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AllureDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ding.exer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ding.exer" />
+      <option name="MAIN_CLASS_NAME" value="com.ding.exer.UserTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.addUserError" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AllureDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ding.exer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ding.exer" />
+      <option name="MAIN_CLASS_NAME" value="com.ding.exer.UserTest" />
+      <option name="METHOD_NAME" value="addUserError" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/ixixi/Desktop/AllureDemo/src/main/resources/suite.xml" />
+        <item itemvalue="TestNG.HttpTest" />
+        <item itemvalue="TestNG.HttpTest.httpTest" />
+        <item itemvalue="TestNG.UserTest.addUserError" />
+        <item itemvalue="TestNG.UserTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\ixixi\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c0d6660-20ad-4d2a-b1a3-f3d17bc43fd4" name="Default Changelist" comment="" />
+      <created>1606443377036</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606443377036</updated>
+      <workItem from="1606443383403" duration="9213000" />
+      <workItem from="1606459483174" duration="11000" />
+      <workItem from="1606463291778" duration="1825000" />
+      <workItem from="1606465489847" duration="684000" />
+      <workItem from="1606629416339" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="475" y="296" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606443460584">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="475" y="296" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.760@0.0.1280.760" timestamp="1606443460584" />
+    <state x="99" y="220" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606443432387">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="99" y="220" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.760@0.0.1280.760" timestamp="1606443432387" />
+    <state x="416" y="200" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog" timestamp="1606443462107">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="416" y="200" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.0.1280.760@0.0.1280.760" timestamp="1606443462107" />
+    <state x="393" y="221" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1606458974201">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="393" y="221" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.760@0.0.1280.760" timestamp="1606458974201" />
+    <state x="421" y="135" key="FileChooserDialogImpl" timestamp="1606629438078">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="421" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1606629438078" />
+    <state width="1238" height="118" key="GridCell.Tab.0.bottom" timestamp="1606465122153">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="118" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1606465122153" />
+    <state width="1238" height="118" key="GridCell.Tab.0.center" timestamp="1606465122153">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="118" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1606465122153" />
+    <state width="1238" height="118" key="GridCell.Tab.0.left" timestamp="1606465122153">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="118" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1606465122153" />
+    <state width="1238" height="118" key="GridCell.Tab.0.right" timestamp="1606465122153">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="118" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1606465122153" />
+    <state width="1238" height="202" key="GridCell.Tab.1.bottom" timestamp="1606459344372">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="202" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1606459344372" />
+    <state width="1238" height="202" key="GridCell.Tab.1.center" timestamp="1606459344372">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="202" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1606459344372" />
+    <state width="1238" height="202" key="GridCell.Tab.1.left" timestamp="1606459344372">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="202" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1606459344372" />
+    <state width="1238" height="202" key="GridCell.Tab.1.right" timestamp="1606459344372">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="202" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1606459344372" />
+    <state x="171" y="35" key="Maven.ArtifactSearchDialog" timestamp="1606448371842">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="171" y="35" key="Maven.ArtifactSearchDialog/0.0.1280.760@0.0.1280.760" timestamp="1606448371842" />
+    <state x="142" y="22" key="SettingsEditor" timestamp="1606464230527">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="142" y="22" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1606464230527" />
+    <state x="6" y="0" key="new project wizard" timestamp="1606458732640">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="6" y="0" key="new project wizard/0.0.1280.760@0.0.1280.760" timestamp="1606458732640" />
+    <state x="305" y="84" width="672" height="678" key="search.everywhere.popup" timestamp="1606447577474">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="305" y="84" width="672" height="678" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1606447577474" />
+  </component>
+</project>

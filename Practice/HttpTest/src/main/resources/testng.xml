@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="测试报告">
+    <test name="风险点模块">
+        <classes>
+            <class name="exer.SuiteConfig"/>
+            <class name="exer.RiskTest"/>
+        </classes>
+    </test>
+    <test name="用户模块">
+        <classes>
+            <class name="exer.SuiteConfig"/>
+            <class name="exer.UserTest"/>
+        </classes>
+    </test>
+    <!--   ExtentReport 生成测试报告-->
+</suite>

@@ -1,0 +1,26 @@
+
+[
+java:S18545"9Remove this useless assignment to local variable "value".(ƒŒ€‘ùÿÿÿÿ8Ú¼£¤á.
+U	java:S106?"9Replace this use of System.out or System.err by a logger.(‹Úë‚8ÔĞ²¤á.
+h
+java:S1192-"FDefine a constant instead of duplicating this literal "utf-8" 3 times.(—·æàúÿÿÿÿ8Ááÿíá.
+l
+java:S2095B"OUse try-with-resources or close this "DefaultHttpClient" in a "finally" clause.(†Íø±8Ã½¤á.
+V
+java:S1874+"9Remove this use of "DefaultHttpClient"; it is deprecated.(†Íø±8Ú¼£¤á.
+Z	java:S106."9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8Ú¼£¤á.
+V
+java:S1874+"9Remove this use of "DefaultHttpClient"; it is deprecated.(†Íø±8Ú¼£¤á.
+V
+java:S1874B"9Remove this use of "DefaultHttpClient"; it is deprecated.(†Íø±8Ã½¤á.
+]	java:S125J"<This block of commented-out lines of code should be removed.(¤ß…ùÿÿÿÿ8÷áÎ¤á.
+U	java:S106\"9Replace this use of System.out or System.err by a logger.(»Äˆ¥8©ªıîá.
+V
+java:S1874B"9Remove this use of "DefaultHttpClient"; it is deprecated.(†Íø±8Ã½¤á.
+Z	java:S106V"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8óĞã¤á.
+Z	java:S106^"9Replace this use of System.out or System.err by a logger.(û²Ş°ûÿÿÿÿ8„Ä‚ïá.
+L
+java:S14815"*Remove this unused "value" local variable.(ƒŒ€‘ùÿÿÿÿ8Ú¼£¤á.
+l
+java:S2095+"OUse try-with-resources or close this "DefaultHttpClient" in a "finally" clause.(†Íø±8Ú¼£¤á.
+Z	java:S1066"9Replace this use of System.out or System.err by a logger.(ò™Ä¶øÿÿÿÿ8Ú¼£¤á.

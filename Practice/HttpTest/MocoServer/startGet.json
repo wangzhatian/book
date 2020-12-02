@@ -1,0 +1,95 @@
+[
+  {
+    "description": "模拟一个没有参数的get请求 ",
+    "request": {
+      "uri": "/getdemo",
+      "method": "get"
+    },
+    "response": {
+      "text": "这是一个没有参数的get请求"
+    }
+  },
+  {
+    "description": "模拟一个带参数的get请求 ",
+    "request": {
+      "uri": "/getwithparam",
+      "method": "get",
+      "queries": {
+        "name": "huhansan",
+        "age": "12"
+      }
+    },
+    "response": {
+      "text": "我胡汉三又回来了"
+    }
+  },
+  {
+    "description": "这是一个带cookie的get请求",
+    "request": {
+      "uri": "/get/whih/cookies",
+      "method": "get",
+      "cookies": {
+        "login": "trun"
+      }
+    },
+    "response": {
+      "text": "这是一个需要携带cookies信息才能访问的get请求"
+    }
+  },
+  {
+    "description": "这是一个带cookie的post请求",
+    "request": {
+      "uri": "/post/with/cookie",
+      "method": "post",
+      "cookies": {
+        "login": "trun"
+      },
+      "json": {
+        "name": "huhansan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "name": "huhansan",
+        "stutas": "200"
+      }
+    }
+  },
+  {
+    "description": "这是一个带header的请求",
+    "request": {
+      "uri": "/post/wiht/headers",
+      "method": "post",
+      "headers": {
+        "content-type": "applicatione/json"
+      },
+      "cookies": {
+        "login": "trun"
+      },
+      "json": {
+        "login": "wangyi",
+        "age": "20"
+      }
+    },
+    "response": {
+      "json": {
+        "wangyi": "succese"
+      }
+    }
+  },
+  {
+    "description": "这是一个会返回cookies信息的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "trun"
+      },
+      "text": "恭喜你获得cookie是信息成功"
+    }
+  }
+]

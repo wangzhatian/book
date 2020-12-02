@@ -1,0 +1,21 @@
+
+V
+java:S1874="9Remove this use of "DefaultHttpClient"; it is deprecated.(†Íø±8„¹…¤á.
+Z	java:S106E"9Replace this use of System.out or System.err by a logger.(ÊÉÏ¬ÿÿÿÿÿ8ÛÍ‘¤á.
+L
+java:S14812"*Remove this unused "value" local variable.(ƒŒ€‘ùÿÿÿÿ8ùã£á.
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8£ËÏ£á.
+l
+java:S2095="OUse try-with-resources or close this "DefaultHttpClient" in a "finally" clause.(†Íø±8„¹…¤á.
+[
+java:S18542"9Remove this useless assignment to local variable "value".(ƒŒ€‘ùÿÿÿÿ8ùã£á.
+Z	java:S1063"9Replace this use of System.out or System.err by a logger.(ò™Ä¶øÿÿÿÿ8˜„å£á.
+Z	java:S106H"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8¥ß–¤á.
+l
+java:S2095("OUse try-with-resources or close this "DefaultHttpClient" in a "finally" clause.(†Íø±8¬øÇ£á.
+V
+java:S1874("9Remove this use of "DefaultHttpClient"; it is deprecated.(†Íø±8¬øÇ£á.
+V
+java:S1874="9Remove this use of "DefaultHttpClient"; it is deprecated.(†Íø±8 €‹¤á.
+V
+java:S1874("9Remove this use of "DefaultHttpClient"; it is deprecated.(†Íø±8ø Ø£á.

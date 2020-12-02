@@ -1,0 +1,7 @@
+
+D
+java:S1481"(Remove this unused "url" local variable.(¸šý?8ÓÉ¢Ãà.
+Ž
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¬Ü‘¼ÿÿÿÿÿ8ÓÉ¢Ãà.
+M
+java:S1481"+Remove this unused "result" local variable.(ªßê„ýÿÿÿÿ8ÓÉ¢Ãà.

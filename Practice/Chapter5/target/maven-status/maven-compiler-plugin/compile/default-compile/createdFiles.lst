@@ -1,0 +1,6 @@
+com\course\testng\suite\LoginTest.class
+com\course\testng\suite\SuiteConfig.class
+com\course\testng\suite\PayTest.class
+com\course\http\client\MyHttpClient.class
+com\course\testng\BeasicAnnotation.class
+com\course\testng\group\GroupOnMethod.class
