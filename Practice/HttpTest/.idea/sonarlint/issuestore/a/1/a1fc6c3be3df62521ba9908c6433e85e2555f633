@@ -1,8 +1,0 @@
-
-Q	java:S106"9Replace this use of System.out or System.err by a logger.(…ï•¼ûÿÿÿÿ
-a	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œù»è
-T
-java:S1128"9Remove this unused import 'io.qameta.allure.Description'.(¬×È…8¸êòÆà.
-^	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ
-f	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»”Òàüÿÿÿÿ
-Q	java:S106"9Replace this use of System.out or System.err by a logger.(Õô©øÿÿÿÿ

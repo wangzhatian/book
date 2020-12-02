@@ -1,20 +1,0 @@
-
-GWeb:TableWithoutCaptionCheck" Add a description to this table.(®§¤
-=	Web:S1827")Remove this deprecated "width" attribute.(®§¤
-C	Web:S1827"/Remove this deprecated "cellspacing" attribute.(®§¤
-C	Web:S1827"/Remove this deprecated "cellpadding" attribute.(®§¤
-g Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(–“±£
-g Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(¶õÛ—
-l Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ü’é—şÿÿÿÿ
-l Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ß¿Øæúÿÿÿÿ
-l Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ş°¹‚øÿÿÿÿ
-E	Web:S1827"+Remove this deprecated "bgcolor" attribute.(Ì®ûÅúÿÿÿÿ
-VWeb:UnsupportedTagsInHtml5Check"&Remove this deprecated "font" element.(È¡¶‚ÿÿÿÿÿ
-VWeb:UnsupportedTagsInHtml5Check"&Remove this deprecated "font" element.(ÁéâĞüÿÿÿÿ
-QWeb:UnsupportedTagsInHtml5Check!"&Remove this deprecated "font" element.(ÓĞ²
-VWeb:UnsupportedTagsInHtml5Check$"&Remove this deprecated "font" element.(‰’Œøÿÿÿÿ
-E	Web:S1827'"+Remove this deprecated "bgcolor" attribute.(Ì®ûÅúÿÿÿÿ
-VWeb:UnsupportedTagsInHtml5Check)"&Remove this deprecated "font" element.(È¡¶‚ÿÿÿÿÿ
-VWeb:UnsupportedTagsInHtml5Check,"&Remove this deprecated "font" element.(ÁéâĞüÿÿÿÿ
-QWeb:UnsupportedTagsInHtml5Check/"&Remove this deprecated "font" element.(ÓĞ²
-QWeb:UnsupportedTagsInHtml5Check2"&Remove this deprecated "font" element.(°Şª©

@@ -1,9 +1,0 @@
-
-g	java:S101
-"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(«’ûÔıÿÿÿÿ
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ùÛ¸š8°ïŸ©à.
-`
-java:S1128">Remove this unused import 'org.testng.annotations.Parameters'.(Ôí€¬ùÿÿÿÿ8àÄÆªà.
-g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8°ïŸ©à.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ç¦ãÿÿÿÿÿÿ8ŸíĞŸà.
-T	java:S106"9Replace this use of System.out or System.err by a logger.(¼ÙùG8¾üÒŸà.

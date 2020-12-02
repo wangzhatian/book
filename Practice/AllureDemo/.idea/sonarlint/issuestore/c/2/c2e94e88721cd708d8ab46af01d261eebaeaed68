@@ -1,8 +1,0 @@
-
-e	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8•¦¾à.
-T
-java:S1128"4Remove this unused import 'java.security.PublicKey'.(ºâú½üÿÿÿÿ8•¦¾à.
-h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œù»è8•¦¾à.
-X	java:S106"9Replace this use of System.out or System.err by a logger.(Õô©øÿÿÿÿ8•¦¾à.
-m	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»”Òàüÿÿÿÿ8•¦¾à.
-X	java:S106"9Replace this use of System.out or System.err by a logger.(…ï•¼ûÿÿÿÿ8•¦¾à.
